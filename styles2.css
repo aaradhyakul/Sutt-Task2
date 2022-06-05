@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    height: 1400px;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    color: white;
+    gap: 15px;
+
+}
+
+.header {
+    grid-column: 1/-1;
+    display: flex;
+    height: 100px;
+
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttons {
+
+    position: fixed;
+    top: 724px;
+    left: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 285px;
+    border-radius: 16px;
+
+    flex-direction: column;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-left: 65px;
+    font-family: sans-serif;
+    height: 1000px;
+    grid-row: 2/3;
+    padding-right: 23px;
+    z-index: 1;
+
+
+
+
+
+}
+
+.block2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 65px;
+
+    padding: 10px 0;
+    font-family: sans-serif;
+    justify-content: space-around;
+    grid-row: 2/span 2;
+
+}
+
+.form-control {
+    position: relative;
+    width: 80%;
+    margin: 10px 0 20px 0;
+}
+
+.form-control label {
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+
+    font-size: 20px;
+}
+
+.form-control textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 8px 0;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
+
+}
+
+.form-control i {
+    visibility: hidden;
+    color: black;
+    position: absolute;
+    top: 47px;
+    right: -18px;
+
+
+}
+
+.form-control input:focus {
+  outline: none
+}
+
+.form-control>small {
+    visibility: hidden;
+    color: red;
+}
+
+.form-control.error>small {
+    visibility: visible;
+    font-size: 20px;
+}
+
+#submit,
+#reset {
+    border: 5px solid black;
+    border-radius: 11px;
+    padding: 10px 25px;
+    width: 150px;
+    margin: 5px 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#submit:hover,
+#reset:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05, 1.05);
+}
+
+.form-control.success input {
+    /* border-color: green; */
+    border: 3px solid green;
+    box-shadow: 0px 0px 4px 2px rgb(50, 170, 50);
+
+
+}
+
+
+.form-control.error input {
+
+    border: 3px solid red;
+    box-shadow: 0px 0px 4px 2px red;
+
+
+}
+
+.form-control.error i.fa-circle-exclamation {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.success i.fa-circle-check {
+    visibility: visible;
+    color: green;
+}
+
+.optional {
+    display: none;
+}

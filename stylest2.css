@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   
+    margin:0 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name{
+   
+    display:flex;
+    height:90px;
+    align-items: center;
+    margin:10px 0;
+    
+}
+.fname{
+    
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:brown;
+    font-weight: 600;
+
+}
+.lname{
+    
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+
+}
+.phone,.address{
+    color:gray
+}
+.email{
+    color:rgb(31, 184, 184)
+}
+
+.details{
+    align-self: flex-end;
+    margin-left: auto;
+    
+    
+}
+.divider1{
+    height:2px;
+    background-color: gray;
+}
+.profsum,.skills,.pskills,.whis,.educ{
+    display:flex;
+    min-height:100px;
+    align-items: flex-start;
+    
+}
+.psumhead,.skillshead,.pskillshead,.whishead,.educhead{
+    color:gray;
+    font-family: 'Abel', sans-serif;
+font-size: 20px;
+    width:220px;
+    font-weight: 600;
+}
+.skillstxt,.pskillstxt,.whistxt,.eductxt ul{
+    margin-left:46px;
+}
+
+.printbtn{
+    border:3px solid brown;
+    width:100px;
+    padding:10px 2px;
+    border-radius: 20px ;
+    position:fixed;
+    left:9%;
+    bottom: 5%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+
+}
+.printbtn:hover{
+    background-color: brown;
+    color:white;
+}

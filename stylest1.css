@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS
+font-family: 'Abel', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Squada One', cursive; */
+
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 63% 37%;
+    grid-template-rows: 100vh;
+
+
+}
+
+.block1 {
+    margin: 45px 30px 0 40px;
+    font-family: 'Kanit', sans-serif;
+    background-color: white;
+}
+
+.fname {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    font-weight: bolder;
+    color: rgb(80, 102, 119);
+
+}
+
+.lname {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(80, 102, 119);
+    text-transform: uppercase;
+
+}
+
+.divider1 {
+    height: 1px;
+
+    background-color: black;
+}
+
+.headpsum,
+.headwhis {
+    font-size: 23px;
+    font-weight: bolder;
+    color: rgb(80, 102, 119);
+    padding-bottom: 3px;
+
+}
+
+.divider2 {
+    height: 1px;
+    background-color: rgb(93, 128, 156);
+}
+
+.psum,
+.whis {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.whis strong {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.whis ul {
+    padding-left: 20px;
+}
+
+.whis ul li {
+    padding: 5px 0px;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(80, 102, 119);
+    color: white;
+
+    padding: 120px 0px 0 0;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+
+}
+
+.info {
+    padding-bottom: 40px;
+
+}
+
+.address,
+.phone,
+.email {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 40px;
+
+}
+
+.addresssym,
+.phonesym,
+.emailsym {
+    padding-right: 10px;
+}
+
+.phonesym {
+    color: white;
+}
+
+.addresstxt,
+.phonetxt,
+.emailtxt {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.divider3 {
+    height: 1.9px;
+    background-color: white;
+    width: 85%;
+}
+
+.headskills,
+.headeduc,
+.headaffil {
+    padding-left: 30px;
+    font-size: 22px;
+
+    font-weight: bold;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.skills,
+.educ,
+.affil {
+    padding-left: 50px;
+    font-family: sans-serif;
+}
+
+.print {
+    position: fixed;
+    top: 90%;
+    left: 4%;
+}
+
+#printbtn {
+    padding: 17px 25px;
+    border-radius: 30px;
+    border: 3px solid rgb(93, 128, 156);
+    color: rgb(93, 128, 156);
+    font-size: 20px;
+    z-index: 1;
+    transition: 0.4s;
+    font-weight: 600;
+
+}
+
+#printbtn:hover {
+    background-color: rgb(93, 128, 156);
+    color: white;
+}
+
+.printbtnhide {
+    visibility: hidden;
+}

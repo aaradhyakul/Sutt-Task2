@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV form</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form id="form">
+        <div class="header">ENTER YOUR DETAILS</div>
+        <div class="block1">
+            <div class="form-control">
+                <label for="fname" id="lfname">FIRST NAME</label>
+                <input id="fname" type="text" name="fname">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+
+            </div>
+            <div class="form-control">
+                <label for="lname" id="llname">LAST NAME</label>
+                <input id="lname" type="text">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="email" id="lemail">EMAIL-ID</label>
+                <input id="email" type="text">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="phone" id="lphone">PHONE NUMBER</label>
+                <input id="phone" type="text">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="address" id="laddress">ADDRESS</label>
+                <input id="address" type="text">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error</small>
+            </div>
+            <div class="form-control">
+                <label for="psum" id="lpsum">PROFESSIONAL SUMMARY</label>
+                <textarea id="psum" name="psum"></textarea>
+            </div>
+            
+            
+
+        </div>
+        <div class="block2">
+            
+            <div class="form-control">
+                <label for="whis" id="lwhis">WORK HISTORY</label>
+                <textarea id="whis" name="whis"></textarea>
+            </div>
+            <div id="ahide" class="form-control">
+                <label for="affil" id="laffil">AFFILIATIONS</label>
+                <textarea id="affil" name="affil"></textarea>
+            </div>
+            <div class="form-control">
+                <label for="skills" id="lskills">SKILLS</label>
+                <textarea id="skills" name="skills"></textarea>
+            </div>
+            <div id="hide" class="form-control">
+                <label for="pskills" id="lpskills">PROFESSIONAL SKILLS</label>
+                <textarea id="pskills" name="pskills"></textarea>
+            </div>
+            
+            <div class="form-control">
+                <label for="educ" id="leduc">EDUCATION</label>
+                <textarea id="educ" name="educ"></textarea>
+            </div>
+            
+            
+
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </form>
+    <div class="buttons">
+        <button id="submit" type="submit" form="form">SUBMIT</button>
+        <button id="reset" type="reset" form="form">CLEAR</button>
+    </div>
+
+
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+       
+        CKEDITOR.replace('affil')
+        CKEDITOR.replace('whis')
+        CKEDITOR.replace('educ')
+        CKEDITOR.replace('skills')
+        CKEDITOR.replace('pskills')
+        
+    </script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
